@@ -1,0 +1,217 @@
+@import "style.css";
+
+body {
+    background-color: #f2f2f2;
+}
+
+/* header */
+#header {
+    padding: 10px 200px;
+    background-color: #fff;
+}
+
+/* footer */
+#footer {
+    width: 100%;
+    height: 80px;
+    padding: 10px 180px;
+    box-sizing: border-box;
+    position: relative;
+    border-top: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f_logo {
+    width: 30%;
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: rgb(145, 145, 145);
+}
+
+.f_logo > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    background-color: #d3d3d3;
+}
+
+.f_menu {
+    justify-content: flex-end;
+    width: 70%;
+    font-size: 0.3rem;
+    color: rgb(145, 145, 145);
+}
+
+.f_menu > li {
+    padding: 0 10px;
+    font-weight: normal;
+    font-size: 0.8rem;
+    position: relative;
+}
+
+/* contents */
+#contents {
+    height: 750px;
+    width: 100%;
+}
+#contents > div {
+    margin: 50px auto;
+}
+.signUpFormWrap {
+    width: 640px;
+    height: 680px;
+    background-color: #fcfcfc;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    text-align: center;
+    padding: 60px 90px;
+    box-sizing: border-box;
+}
+.signUpFormWrap > h2 {
+    font-size: 2rem;
+    color: #0072de;
+    margin-bottom: 50px;
+}
+.signUpFormWrap > form {
+    text-align: left;
+}
+.signUpFormWrap > form > div {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+.signUpFormWrap > form > div > input {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #969696;
+    background-color: #fcfcfc;
+    width: 100%;
+    height: 50px;
+    font-size: 1.3rem;
+    color: #909090;
+    padding: 30px 0 10px;
+    box-sizing: border-box;
+}
+.signUpFormWrap > form > div > input + label {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    font-size: 0.85rem;
+    color: #909090;
+    transition: all 0.15s linear;
+}
+.signUpFormWrap > form > div > input:placeholder-shown + label {
+    top: 13px;
+    font-size: 1.3rem;
+}
+.signUpFormWrap > form > div > input:focus {
+    border-bottom: 2.5px solid #147de0;
+    color: #147de0;
+}
+.signUpFormWrap > form > div > input:focus + label {
+    top: 0;
+    font-size: 0.85rem;
+    color: #147de0;
+}
+
+.signUpFormWrap > form > div > button {
+    outline: 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 0.4rem 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    background-color: #fcfcfc;
+}
+.signUpFormWrap > form > div > button:hover {
+    background-color: #efefef;
+}
+.signUpFormWrap > form > div > span {
+    position: absolute;
+    right: 15px;
+    top: 40%;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/*
+select {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #969696;
+    background-color: #fcfcfc;
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+    font-size: 1.3rem;
+    color: #909090;
+    position: relative;
+}
+select:focus {
+    border-bottom: 2.5px solid #147de0;
+    color: #147de0;
+}
+select:focus + label {
+    color: #147de0;
+}
+.sel_items {
+    position: relative;
+}
+.sel_items > label {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    font-size: 0.9rem;
+    color: #909090;
+}
+
+.signUpFormWrap > form > .cb_items {
+    border-bottom: 1px solid #969696;
+    padding: 20px 0 3px;
+    position: relative;
+}
+.signUpFormWrap > form > .cb_items > label:first-child {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    font-size: 0.9rem;
+    color: #909090;
+}
+.signUpFormWrap > form > div > input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+}
+.signUpFormWrap > form > div > input[type="checkbox"] + label {
+    position: relative;
+    font-size: 1.3rem;
+    color: #909090;
+    margin-right: 20px;
+}
+*/
+.signUpFormWrap > form > .err_msg {
+    font-size: 0.9rem;
+    color: red;
+    margin-top: -10px;
+    display: none;
+}
+.signUpFormWrap > form > input[type="button"] {
+    display: block;
+    border: 0;
+    outline:0;
+    width: 280px;
+    height: 45px;
+    border-radius: 22px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    background-color: #dfdfdf;
+    margin: 50px auto;
+    cursor: pointer;
+    padding: 0;
+}
