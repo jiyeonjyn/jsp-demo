@@ -1,0 +1,430 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* header */
+#header {
+    width: 100%;
+    height: 90px;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 1px solid #d5d5d5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+}
+.logo {
+    width: 12%;
+    height: 100%;
+    background: #efefef;
+}
+.logo > a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+.menu > li {
+    display: block;
+    padding-left: 60px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.menu > li > a {
+    position: relative;
+}
+.menu > li > a::after {
+    content: "";
+    display: block;
+    background-color: black;
+    width: 0;
+    height: 1.5px;
+    position: absolute;
+    bottom: -1.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+}
+.menu > li:hover > a::after {
+    width: 100%;
+}
+
+.icons {
+    width: 28%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.icons > span {
+    font-weight: bold;
+    margin-right: 30px;
+}
+.icons > .icon-slide-down {
+    padding: 13px 25px 15px;
+    border: 1px solid #d5d5d5;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    transition: bottom 0.3s;
+    z-index: -1;
+}
+.icons > a {
+    margin-right: 30px;
+}
+.icons > a > span {
+    border: 1.5px solid rgb(99, 99, 99);
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.icons > a > i {
+    font-size: 1.7rem;
+}
+
+/* visual */
+#visual {
+    width: 100%;
+    position: relative;
+    z-index: -2;
+}
+#visual > img {
+    width: 100%;
+}
+
+/* common */
+#contents {
+    width: 1400px;
+    margin: 0 auto;
+}
+#contents > div {
+    margin: 70px 0;
+}
+#contents > div::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* contents */
+.con1 {
+    padding: 0 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.con1 > div {
+    float: left;
+    width: 22.75%;
+    margin-right: 3%;
+    text-align: left;
+}
+.con1 > div:last-of-type {
+    margin-right: 0;
+}
+.con1 > h2 {
+    padding: 10px 0 70px;
+}
+.con1 > div > .img-wrap {
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px #999;
+}
+.con1 > div > div > div {
+    height: 270px;
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.con1 > div > div > div:hover {
+    transform: scale(1.1);
+}
+.con1 .img1 {
+    background: url(https://user-images.githubusercontent.com/56498435/104543616-2ce9b280-5669-11eb-9d9b-20d60828f3ab.jpg)
+        no-repeat left/cover;
+}
+.con1 .img2 {
+    background: url(https://user-images.githubusercontent.com/56498435/104544338-d2e9ec80-566a-11eb-8471-3a3f9b837ecd.jpg)
+        no-repeat right/cover;
+}
+.con1 .img3 {
+    background: url(https://user-images.githubusercontent.com/56498435/104544491-396f0a80-566b-11eb-9f25-c83434f8b9fe.jpg)
+        no-repeat center/cover;
+}
+.con1 .img4 {
+    background: url(https://user-images.githubusercontent.com/56498435/104544457-1fcdc300-566b-11eb-9676-2c620e0a6441.jpg)
+        no-repeat left/cover;
+}
+.con1 > div > h3 {
+    padding-top: 30px;
+}
+.con1 > div > p {
+    font-size: 0.8rem;
+}
+.con1 > a {
+    display: inline-block;
+    margin-top: 60px;
+    padding: 17px 30px;
+    font-size: 0.85rem;
+    border: 1px solid #333;
+}
+.con1 > a:hover {
+    background-color: #333;
+    color: #fff;
+}
+.con1 > a::after {
+    display: inline-block;
+    content: "→";
+    margin-left: 30px;
+}
+
+.con2 {
+    display: flex;
+}
+.con2 > div {
+    width: 50%;
+    height: 550px;
+}
+.box1 {
+    background: url(https://images.samsung.com/kdp/cms_contents/104177/53ce4f9f-051a-4205-9263-9398bb3d0dd2.jpg)
+        no-repeat top/cover;
+/*    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;*/
+}
+.box2 {
+    background: #eed9cf;
+    position: relative;
+/*    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;*/
+}
+.box2 > h2 {
+    color: #fff;
+    margin-top: 15%;
+    margin-left: 63%;
+}
+.box2 > span > a {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border: 2px solid #fff;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 40%;
+    margin-left: 60%;
+}
+.box2 > span > a:hover {
+    color: #e9c5b5;
+    background-color: #fff;
+}
+.box3 {
+    position: absolute;
+    top: 43%;
+    left: 10%;
+    width: 280px;
+    height: 240px;
+    background-color: #fff;
+}
+.box3 > h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+    margin-top: 13%;
+    margin-left: 7%;
+}
+.box3 > p {
+    font-size: 0.82rem;
+    color: #222;
+    margin-top: 3%;
+    margin-left: 7%;
+}
+.box3 > ul {
+    border-left: 1px solid#555;
+    margin-left: 7%;
+}
+.box3 > ul > li {
+    font-size: 0.82rem;
+    color: #777;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.con3 {
+    height: 1400px;
+    text-align: center;
+}
+.con3 > h2 {
+    padding: 50px 0;
+}
+.con3 > ul {
+    height: 1250px;
+    position: relative;
+    margin: 0 auto;
+}
+.con3 > ul > li {
+    position: absolute;
+    width: 32%;
+    text-align: left;
+}
+.con3 > ul > li > div {
+    width: 100%;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.con3 > ul > li > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px 3px rgb(191, 190, 199);
+    cursor: pointer;
+}
+.con3 > ul > li:nth-of-type(1),
+.con3 > ul > li:nth-of-type(4) {
+    height: 50%;
+}
+.con3 > ul > li:nth-of-type(1) > div,
+.con3 > ul > li:nth-of-type(4) > div {
+    height: 490px;
+    background: url(https://images.samsung.com/kdp/display_banner/1354/6c382681-b756-42dd-b6b9-9106a756bb27.jpg?$ORIGIN_JPG$)
+        no-repeat center/cover;
+}
+.con3 > ul > li:nth-of-type(3),
+.con3 > ul > li:nth-of-type(5) {
+    height: 33%;
+}
+.con3 > ul > li:nth-of-type(3) > div,
+.con3 > ul > li:nth-of-type(5) > div {
+    height: 280px;
+    background: url(https://images.samsung.com/kdp/display_banner/1124/7338a092-1c1e-421f-a8b5-9fc680fcbd58.jpg?$ORIGIN_JPG$)
+        no-repeat center/cover;
+}
+.con3 > ul > li:nth-of-type(2),
+.con3 > ul > li:nth-of-type(6) {
+    height: 67%;
+}
+.con3 > ul > li:nth-of-type(2) > div,
+.con3 > ul > li:nth-of-type(6) > div {
+    height: 700px;
+    background: url(https://images.samsung.com/kdp/display_banner/945/7fa57611-7e84-4add-9274-7b26a67874fb.jpg?$ORIGIN_JPG$)
+        no-repeat center/cover;
+}
+.con3 > ul > li:nth-of-type(1) {
+    top: 0;
+    left: 0;
+}
+.con3 > ul > li:nth-of-type(2) {
+    top: 0;
+    left: 34%;
+}
+.con3 > ul > li:nth-of-type(3) {
+    top: 0;
+    left: 68%;
+}
+.con3 > ul > li:nth-of-type(4) {
+    bottom: 0;
+    left: 0;
+}
+.con3 > ul > li:nth-of-type(5) {
+    bottom: 0;
+    left: 34%;
+}
+.con3 > ul > li:nth-of-type(6) {
+    bottom: 0;
+    left: 68%;
+}
+.con3 > ul > li > h3 {
+    padding: 20px 0 7px 0;
+    font-size: 1.3rem;
+}
+.con3 > ul > li > p {
+    font-size: 0.9rem;
+    color: rgb(143, 143, 143);
+}
+
+/* footer */
+#footer {
+    width: 100%;
+    height: 105px;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    position: relative;
+    border-top: 1px solid #d5d5d5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.f_menu {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+}
+.f_menu > li {
+    display: block;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    position: relative;
+}
+.f_menu > li::after {
+    display: block;
+    content: "";
+    width: 0.7px;
+    height: 20px;
+    background: rgb(204, 204, 204);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.f_menu > li:last-of-type::after {
+    display: none;
+}
+.f_icons {
+    width: 20%;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.f_icons > * {
+    margin-right: 20px;
+}
+.f_icons > span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.f_icons > a > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #181818;
+    color: #fff;
+}

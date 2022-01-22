@@ -1,0 +1,102 @@
+@import "style.css";
+
+body {
+    background-color: #f2f2f2;
+}
+
+/* header */
+#header {
+    padding: 10px 200px;
+    background-color: #fff;
+}
+
+/* footer */
+#footer {
+    width: 100%;
+    height: 80px;
+    padding: 10px 180px;
+    box-sizing: border-box;
+    position: relative;
+    border-top: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f_logo {
+    width: 30%;
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: rgb(145, 145, 145);
+}
+
+.f_logo > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    background-color: #d3d3d3;
+}
+
+.f_menu {
+    justify-content: flex-end;
+    width: 70%;
+    font-size: 0.3rem;
+    color: rgb(145, 145, 145);
+}
+
+.f_menu > li {
+    padding: 0 10px;
+    font-weight: normal;
+    font-size: 0.8rem;
+    position: relative;
+}
+
+/* contents */
+#contents {
+    height: 750px;
+    width: 100%;
+}
+#contents > div {
+    margin: 50px auto;
+}
+.signUpFormWrap {
+    width: 640px;
+    height: 500px;
+    background-color: #fcfcfc;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    text-align: center;
+    padding: 60px 90px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+.signUpFormWrap > h2 {
+    font-size: 2rem;
+    color: #0072de;
+    margin-bottom: 50px;
+}
+.signUpFormWrap > h2 > p {
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+.signUpFormWrap > a {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #505050;
+    position: relative;
+}
+.signUpFormWrap > a::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #505050;
+}
+

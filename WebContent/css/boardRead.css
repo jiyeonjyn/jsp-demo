@@ -1,0 +1,207 @@
+@import "style.css";
+
+body {
+    background-color: #f7f7f7;
+}
+
+/* footer */
+#footer {
+    background-color: #fff;
+}
+
+/* main */
+#main {
+    min-height: 800px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+#main > nav {
+    min-height: 900px;
+    min-width: 280px;
+    padding: 60px 50px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-top-right-radius: 20px;
+}
+#main > nav > h3 {
+    padding-bottom: 20px;
+}
+.board-title {
+    border-top: 1.2px solid #000;
+    border-bottom: 1.2px solid #000;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #353535;
+}
+.board-title > li {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.board-title > li::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-top: 1.5px solid #000;
+    border-right: 1.5px solid #000;
+    transform: rotateZ(-45deg) translateX(-10px);
+}
+.board-menu {
+    padding: 5px 0;
+    font-weight: normal;
+    font-size: 0.85rem;
+}
+.board-menu > li > a {
+    display: block;
+    padding: 10px;
+}
+.board-menu > li:hover > a {
+    background-color: #f7f7f7;
+}
+
+#main > section {
+    min-height: 900px;
+    box-shadow: 0vw 0vw 1.7361vw rgba(141, 141, 141, 0.06);
+    width: 80%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+}
+#main > section > h3 {
+    font-size: 0.9rem;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+.board-header > h4 {
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+.board-header > .board-info {
+    padding: 10px 0;
+}
+.board-header > .board-info > * {
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+.board-header > .board-info > .writer {
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+.board-con {
+    min-height: 200px;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.comment-box {
+    padding: 30px 10px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.comment-tab {
+    display: flex;
+    padding-bottom: 5px;
+}
+.comment-tab > span {
+    margin-left: 7px;
+}
+.comment-list > li {
+    font-size: 0.9rem;
+    padding: 15px 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+.comment-list > li > .cmt-info {
+    display: flex;
+    justify-content: space-between;
+}
+.comment-list > li > .cmt-info .cmt-writer {
+    margin-right: 5px;
+}
+.comment-list > li > .cmt-info .cmt-regdate {
+    font-size: 0.7rem;
+    color: #999;
+    display: inline-block;
+    transform: translateY(-3px);
+}
+.comment-list > li > .cmt-info .cmt-delete-btn {
+    font-size: 0.8rem;
+    outline: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+.comment-list > li > .cmt-info .cmt-delete-btn:hover {
+    text-decoration: underline;
+}
+.comment-list > li > .cmt-con {
+    padding-top: 8px;
+}
+
+.comment-write {
+    border: 2px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 15px 20px;
+    position: relative;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+.comment-write > * {
+    outline: 0;
+    border: 0;
+}
+.comment-write > textarea {
+    padding: 15px 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.comment-write > input[type="button"] {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    background-color: #006ed4;
+    color: #fff;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.comment-write > input[type="button"]:hover {
+    opacity: 1;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.btn-wrap > span {
+    display: flex;
+}
+.btn-wrap input[type="submit"] {
+    outline: 0;
+    cursor: pointer;
+}
+.btn-wrap a,
+.btn-wrap input[type="submit"] {
+    background-color: #fff;
+    padding: 0.5em 1em;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+}
+.btn-wrap a:hover,
+.btn-wrap input[type="submit"]:hover {
+    border: 1px solid #c4c4c4;
+    background-color: #f0f0f0;
+}
+.btn-wrap .board-modify-btn {
+    margin-right: 5px;
+}

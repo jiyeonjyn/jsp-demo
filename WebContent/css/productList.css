@@ -1,0 +1,174 @@
+@import "style.css";
+
+body {
+    background-color: #f7f7f7;
+}
+
+/* footer */
+#footer {
+    background-color: #fff;
+}
+
+/* contents */
+#contents {
+    width: 1400px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0vw 0vw 1.7361vw rgba(0, 0, 0, 0.06);
+    border-radius: 1.3889vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contents > h2 {
+    text-align: center;
+    padding: 60px 0 70px;
+}
+.product-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 35px;
+    box-sizing: border-box;
+}
+.product-container > .item {
+    width: 23%;
+    margin-bottom: 50px;
+    margin-right: 2.6%;
+    position: relative;
+}
+.product-container > .item:nth-of-type(4n) {
+    margin-right: 0;
+}
+#select_all {
+    margin: 0 10px 30px 50px;
+    margin-right: 10px;
+    width: 1.2rem;
+    height: 1.2rem;
+    transform: translateY(3px);
+}
+label[for="select_all"] {
+    user-select: none;
+}
+.product-container > .item > input {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    z-index: 1;
+}
+.product-container > .item > .img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 305.9px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.product-container > .item > .img-wrap > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: transform 1s cubic-bezier(0.2, 0, 0.1, 1);
+    transform: scale(1.01);
+}
+.product-container > .item:hover > .img-wrap > img {
+    transform: scale(1.05);
+}
+.product-container > .item > h3,
+.product-container > .item > p {
+    padding-left: 20px;
+}
+.product-container > .item > h3 {
+    padding-top: 20px;
+    color: #333;
+}
+.product-container > .item > p {
+    padding-top: 10px;
+    color: #999;
+    font-size: 0.95rem;
+}
+
+.view-more {
+    margin: 50px 0 100px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #111;
+    color: #111;
+}
+
+/* 관리자 페이지 */
+.btn-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 0.9rem;
+    color: #333;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.btn-wrap > .pagination {
+    flex-grow: 1;
+    text-align: center;
+}
+.btn-wrap > .pagination > * {
+    padding: 3px 9px;
+    color: #777;
+}
+.btn-wrap > .pagination > a:hover {
+    text-decoration: underline;
+}
+.btn-wrap > .pagination > .current-num {
+    padding: 3px 9px;
+    border-radius: 3px;
+    border: 1px solid #dfdfdf;
+    color: #333;
+}
+.y-prev::after {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    transform: rotateZ(-45deg);
+}
+.y-next::after {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    transform: rotateZ(45deg);
+}
+
+.btn-wrap > input {
+    outline: 0;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.7em 1.3em;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+.btn-wrap > input:hover {
+    border: 1px solid#0072de;
+    color: #0065c4;
+}
+.btn-wrap > .add-btn {
+    margin-right: 20px;
+}
